@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Top-Up - BD Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .payment-methods {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .payment-methods p {
+            margin: 10px 0;
+        }
+        .trusted {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .uid-slot {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .uid-slot input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .fast-bkash {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .fast-bkash button {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .fast-bkash button:hover {
+            background-color: #E64A19;
+        }
+        .diamond-link {
+            color: #007BFF;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .diamond-link:hover {
+            text-decoration: underline;
+        }
+        .payment-page {
+            margin-top: 20px;
+        }
+        .payment-page label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .payment-page input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45A049;
+        }
+    </style>
+    <script>
+        function redirectToPayment(diamond) {
+            const paymentContainer = document.getElementById('payment-container');
+            paymentContainer.style.display = 'block';
+            document.getElementById('selected-diamond').textContent = Selected Option: ${diamond};
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Free Fire Top-Up - BD Server</h1>
+        <div class="uid-slot">
+            <h2>Enter Your UID</h2>
+            <input type="text" placeholder="Enter your Free Fire UID here">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Diamond</th>
+                    <th>Price (BDT)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('25 Diamonds - 12 TK')">25 Diamonds</a></td>
+                    <td>12 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('50 Diamonds - 25 TK')">50 Diamonds</a></td>
+                    <td>25 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('100 Diamonds - 55 TK')">100 Diamonds</a></td>
+                    <td>55 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('255 Diamonds - 75 TK')">255 Diamonds</a></td>
+                    <td>75 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('345 Diamonds - 122 TK')">345 Diamonds</a></td>
+                    <td>122 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('546 Diamonds - 211 TK')">546 Diamonds</a></td>
+                    <td>211 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('1054 Diamonds - 511 TK')">1054 Diamonds</a></td>
+                    <td>511 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('5099 Diamonds - 1552 TK')">5099 Diamonds</a></td>
+                    <td>1552 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('10234 Diamonds - 3082 TK')">10234 Diamonds</a></td>
+                    <td>3082 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('20543 Diamonds - 7054 TK')">20543 Diamonds</a></td>
+                    <td>7054 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('1 Weekly - 105 TK')">1 Weekly</a></td>
+                    <td>105 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('2 Weekly - 205 TK')">2 Weekly</a></td>
+                    <td>205 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('3 Weekly - 300 TK')">3 Weekly</a></td>
+                    <td>300 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('Weekly Lite - 25 TK')">Weekly Lite</a></td>
+                    <td>25 TK</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="diamond-link" onclick="redirectToPayment('Level Up Pass - 75 TK')">Level Up Pass</a></td>
+                    <td>75 TK</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="payment-methods">
+            <h2>Payment Methods</h2>
+            <p>Bkash, Nogod, Rocket, Upay</p>
+            <p>Receiver Number: <strong>01882094142</strong></p>
+            <p>After payment, send the transaction details.</p>
+        </div>
+        <div class="fast-bkash">
+            <button onclick="window.location.href='tel:01882094142'">Pay Now via Fast Bkash</button>
+        </div>
+        <div id="payment-container" class="payment-page" style="display:none;">
+            <h2>Payment Details</h2>
+            <p id="selected-diamond"></p>
+            <label for="giver-number">Payment Giver Number:</label>
+            <input type="text" id="giver-number" placeholder="Enter your number">
+            <label for="transaction-id">Transaction ID:</label>
+            <input type="text" id="transaction-id" placeholder="Enter Transaction ID">
+            <label for="amount">Amount Sent:</label>
+            <input type="text" id="amount" placeholder="Enter sent amount">
+            <button class="submit-btn">Submit</button>
+        </div>
+        <div class="trusted">
+            <p>100% Trusted</p>
+        </div>
+    </div>
+</body>
+</html>
